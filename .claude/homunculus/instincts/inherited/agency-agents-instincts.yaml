@@ -1,0 +1,557 @@
+# Instincts generated from https://github.com/skalingclouds/agency-agents
+# Generated: 2026-03-11T04:55:57.668Z
+# Version: 2.0
+
+---
+id: agency-agents-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/agency-agents
+---
+
+# Agency Agents Commit Length
+
+## Action
+
+Write moderate-length commit messages (~50 characters)
+
+## Evidence
+
+- Average commit message length: 59 chars
+- Based on 127 commits
+
+---
+id: agency-agents-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/agency-agents
+---
+
+# Agency Agents Naming Files
+
+## Action
+
+Use kebab-case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: kebab-case
+
+---
+id: agency-agents-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/agency-agents
+---
+
+# Agency Agents Export Style
+
+## Action
+
+Prefer mixed exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: mixed
+
+---
+id: agency-agents-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/agency-agents
+---
+
+# Agency Agents Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: agency-agents-workflow-feature-development
+trigger: "when implementing a new feature"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/agency-agents
+---
+
+# Agency Agents Workflow Feature Development
+
+## Action
+
+Follow the feature-development workflow:
+1. Add feature implementation
+2. Add tests for feature
+3. Update documentation
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~25x per month
+- Files: **/*.test.*, **/api/**
+
+---
+id: agency-agents-workflow-new-agent-addition
+trigger: "when doing new agent addition"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/agency-agents
+---
+
+# Agency Agents Workflow New Agent Addition
+
+## Action
+
+Follow the new-agent-addition workflow:
+1. Create agent markdown file in appropriate category directory
+2. Update README.md to increment agent count or add category
+3. Ensure agent follows standard format with frontmatter
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~20x per month
+- Files: */agent-name.md, README.md
+
+---
+id: agency-agents-workflow-new-category-preparation
+trigger: "when doing new category preparation"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/agency-agents
+---
+
+# Agency Agents Workflow New Category Preparation
+
+## Action
+
+Follow the new-category-preparation workflow:
+1. Add category to .github/workflows/lint-agents.yml
+2. Add category to scripts/convert.sh AGENT_DIRS
+3. Add category to scripts/install.sh
+4. Add category to scripts/lint-agents.sh
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: .github/workflows/lint-agents.yml, scripts/convert.sh, scripts/install.sh
+
+---
+id: agency-agents-workflow-integration-addition
+trigger: "when doing integration addition"
+confidence: 0.7
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/agency-agents
+---
+
+# Agency Agents Workflow Integration Addition
+
+## Action
+
+Follow the integration-addition workflow:
+1. Create integrations/{tool-name}/README.md
+2. Update main README.md to list the integration
+3. Modify scripts/install.sh to handle the new integration
+4. Optionally add to .gitignore for generated files
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~4x per month
+- Files: integrations/{tool}/README.md, README.md, scripts/install.sh
+
+---
+id: agency-agents-workflow-bulk-agent-enhancement
+trigger: "when doing bulk agent enhancement"
+confidence: 0.55
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/agency-agents
+---
+
+# Agency Agents Workflow Bulk Agent Enhancement
+
+## Action
+
+Follow the bulk-agent-enhancement workflow:
+1. Update all agent markdown files with new frontmatter fields
+2. Update CONTRIBUTING.md with new field documentation
+3. Update README.md if needed
+4. May update conversion scripts
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~1x per month
+- Files: */agent-*.md, CONTRIBUTING.md, README.md
+
+---
+id: agency-agents-workflow-install-script-enhancement
+trigger: "when doing install script enhancement"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/agency-agents
+---
+
+# Agency Agents Workflow Install Script Enhancement
+
+## Action
+
+Follow the install-script-enhancement workflow:
+1. Modify scripts/install.sh with new features
+2. Often involves platform detection or integration support
+3. May include error handling improvements
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~8x per month
+- Files: scripts/install.sh
+
+---
+id: agency-agents-workflow-single-agent-refinement
+trigger: "when doing single agent refinement"
+confidence: 0.8
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/agency-agents
+---
+
+# Agency Agents Workflow Single Agent Refinement
+
+## Action
+
+Follow the single-agent-refinement workflow:
+1. Modify specific agent markdown file
+2. Update content, examples, or frontmatter
+3. May involve multiple commits for the same agent
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~6x per month
+- Files: specific-agent.md
+
+---
+id: agency-agents-kebab-case-files
+trigger: "When creating new agent files"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: skalingclouds/agency-agents
+---
+
+# Agency Agents Kebab Case Files
+
+## Action
+
+Use kebab-case naming for file names (e.g., agent-name.md)
+
+## Evidence
+
+- Pattern in all agent files
+- marketing-carousel-growth-engine.md
+- paid-media-auditor.md
+
+---
+id: agency-agents-camel-case-functions
+trigger: "When defining functions in TypeScript"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: skalingclouds/agency-agents
+---
+
+# Agency Agents Camel Case Functions
+
+## Action
+
+Use camelCase naming convention for functions
+
+## Evidence
+
+- TypeScript language pattern
+- Consistent with codeStyle.namingConventions.functions
+
+---
+id: agency-agents-pascal-case-classes
+trigger: "When defining classes in TypeScript"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: skalingclouds/agency-agents
+---
+
+# Agency Agents Pascal Case Classes
+
+## Action
+
+Use PascalCase naming convention for classes
+
+## Evidence
+
+- TypeScript language pattern
+- Consistent with codeStyle.namingConventions.classes
+
+---
+id: agency-agents-screaming-snake-constants
+trigger: "When defining constants in TypeScript"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: skalingclouds/agency-agents
+---
+
+# Agency Agents Screaming Snake Constants
+
+## Action
+
+Use SCREAMING_SNAKE_CASE naming convention for constants
+
+## Evidence
+
+- TypeScript language pattern
+- Consistent with codeStyle.namingConventions.constants
+
+---
+id: agency-agents-freeform-commits
+trigger: "When making commits"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: skalingclouds/agency-agents
+---
+
+# Agency Agents Freeform Commits
+
+## Action
+
+Use freeform commit messages with optional conventional prefixes like 'fix:', 'feat:'
+
+## Evidence
+
+- openclaw: let stderr through on agents add failure
+- fix: Address PR review feedback
+- feat: Add Paid Media Division
+
+---
+id: agency-agents-59-char-commits
+trigger: "When writing commit messages"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: skalingclouds/agency-agents
+---
+
+# Agency Agents 59 Char Commits
+
+## Action
+
+Keep commit messages around 59 characters on average
+
+## Evidence
+
+- Average commit length is 59 characters
+- Multiple example commits follow this pattern
+
+---
+id: agency-agents-separate-test-location
+trigger: "When organizing test files"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: skalingclouds/agency-agents
+---
+
+# Agency Agents Separate Test Location
+
+## Action
+
+Place test files in separate locations from source files
+
+## Evidence
+
+- testLocation: separate in architecture
+- **/*.test.* pattern in workflows
+
+---
+id: agency-agents-new-agent-workflow
+trigger: "When adding a new agent to a specific category"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/agency-agents
+---
+
+# Agency Agents New Agent Workflow
+
+## Action
+
+Create agent markdown file in appropriate category directory, update README.md, ensure standard frontmatter format
+
+## Evidence
+
+- new-agent-addition workflow frequency: 20
+- */agent-name.md and README.md files involved
+
+---
+id: agency-agents-new-category-workflow
+trigger: "When adding agents to a new category that needs script support"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/agency-agents
+---
+
+# Agency Agents New Category Workflow
+
+## Action
+
+Update .github/workflows/lint-agents.yml, scripts/convert.sh, scripts/install.sh, and scripts/lint-agents.sh with new category
+
+## Evidence
+
+- new-category-preparation workflow frequency: 3
+- All 4 script files consistently involved
+
+---
+id: agency-agents-integration-workflow
+trigger: "When adding integration with a new external tool"
+confidence: 0.88
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/agency-agents
+---
+
+# Agency Agents Integration Workflow
+
+## Action
+
+Create integrations/{tool-name}/README.md, update main README.md, modify scripts/install.sh
+
+## Evidence
+
+- integration-addition workflow frequency: 4
+- Consistent pattern in integrations folder structure
+
+---
+id: agency-agents-bulk-enhancement-workflow
+trigger: "When introducing new standardized fields across all agents"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/agency-agents
+---
+
+# Agency Agents Bulk Enhancement Workflow
+
+## Action
+
+Update all agent markdown files with new frontmatter, update CONTRIBUTING.md and README.md documentation
+
+## Evidence
+
+- bulk-agent-enhancement workflow frequency: 1
+- */agent-*.md pattern affects all agents
+
+---
+id: agency-agents-install-enhancement-workflow
+trigger: "When adding new functionality to the installation process"
+confidence: 0.82
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/agency-agents
+---
+
+# Agency Agents Install Enhancement Workflow
+
+## Action
+
+Modify scripts/install.sh with new features, include platform detection and error handling
+
+## Evidence
+
+- install-script-enhancement workflow frequency: 8
+- Add OpenClaw support to install.sh commit
+
+---
+id: agency-agents-agent-refinement-workflow
+trigger: "When refining an agent based on feedback or requirements"
+confidence: 0.8
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/agency-agents
+---
+
+# Agency Agents Agent Refinement Workflow
+
+## Action
+
+Modify specific agent markdown file, update content, examples, or frontmatter iteratively
+
+## Evidence
+
+- single-agent-refinement workflow frequency: 6
+- Pattern of iterative improvements to individual agents
+
+---
+id: agency-agents-category-structure
+trigger: "When organizing agents"
+confidence: 0.9
+domain: architecture
+source: repo-analysis
+source_repo: skalingclouds/agency-agents
+---
+
+# Agency Agents Category Structure
+
+## Action
+
+Use domain-based folder structure (game-development, marketing, engineering, strategy, specialized, etc.)
+
+## Evidence
+
+- 10 common folders identified
+- Consistent category-based organization across repository
+
+---
+id: agency-agents-openclaw-integration
+trigger: "When working with openclaw tooling"
+confidence: 0.75
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/agency-agents
+---
+
+# Agency Agents Openclaw Integration
+
+## Action
+
+Auto-register agents on install and let stderr through on failure
+
+## Evidence
+
+- openclaw: auto-register agents on install
+- openclaw: let stderr through on agents add failure
+
